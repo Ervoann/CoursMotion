@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Ma page web responsive</title>
+    <style>
+
+    @font-face {
+        font-family: Coolvetica;
+        src: url("./src/Fonts/Coolvetica.ttf");
+    }
+
+      /*
+      Les règles de style suivantes s'appliquent à l'ensemble de la page.
+      Elles garantissent que le contenu de la page s'adapte à la taille de l'écran.
+      */
+      html, body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-image: url(./src/Images/FondSite.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      
+      /*
+      La règle de style suivante s'applique au titre.
+      Elle garantit que le titre prend toute la largeur de la page et qu'il est centré.
+      */
+      h1 {
+        text-align: center;
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Coolvetica;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Coolvetica;
+        margin-top: -20px;
+      }
+      
+      /*
+      La règle de style suivante s'applique au bouton.
+      Elle garantit que le bouton prend toute la largeur disponible et qu'il est centré.
+      */
+      button {
+        display: flex;
+        margin: 0 auto;
+        width: auto;
+        justify-content: center;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 1.5rem;
+        font-family: Coolvetica;
+        color: #0000EE;
+        font-weight: 800;
+      }
+
+      @media (max-width: 1000px) {
+        h1 {
+        text-align: center;
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Coolvetica;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        text-align: center;
+        width: 100%;
+        color: #F5F5F5;
+        font-family: Coolvetica;
+        font-size: 1.7rem;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        border: none;
+        border-radius: 50px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 2.5rem;
+        font-family: Coolvetica;
+        color: #0000EE;
+        font-weight: 800;
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Le titre de la page -->
+    <h1>Bienvenue dans l'espace de partage  <br>du cours de motion de l'Institut Saint-Paul !</h1>
+    <br><br>
+    <h2>Un projet proposé par Ervoann Georges en collaboration avec l'Intitut Saint-Paul</h2>
+    <!-- Le bouton de la page -->
+    <a href="/src/Pdf/Cours01.zip"><button >Télécharger le dossier du premier cours</button></a>
+
+    <script>
+        function openPDF() {
+          // Remplacez "mon_fichier.pdf" par le nom de votre fichier PDF
+          window.open("./src/Pdf/Travail Atlas des possibles_Final.pdf", "_blank");
+        }
+      </script>
+  </body>
+</html>
